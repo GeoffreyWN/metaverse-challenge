@@ -42,7 +42,7 @@ const LoginV2 = () => {
                     >
                         <div className="p-4" >
                             <Image
-                                src="/explosion.jpg "
+                                src="https://cdn.pixabay.com/photo/2017/07/08/10/16/explosion-2483998_960_720.jpg "
                                 width={200}
                                 height={200}
                                 className="object-cover p-2 shadow-sm shadow-red-400 rounded-full"
@@ -62,7 +62,7 @@ const LoginV2 = () => {
 
 
             <div className="w-full h-screen" >
-                <Image src="/light.jpg" layout='fill' objectFit='cover'
+                <Image src="https://cdn.pixabay.com/photo/2021/10/11/17/38/light-6701427_960_720.jpg" layout='fill' objectFit='cover'
                 />
             </div>
         </div>
