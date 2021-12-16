@@ -10,7 +10,7 @@ const LoginV2 = () => {
     return (
         <div className="bg-black relative" >
 
-            <div className="flex flex-col absolute z-50 h-4/6 w-full items-center justify-center  " >
+            <div className="flex flex-col absolute z-50 h-4/6 w-full items-center justify-center opacity-90	 " >
                 <div className="mt-28 text-2xl md:text-6xl font-bold font-specialelite text-gray-300">
 
                     <Typewriter
@@ -37,8 +37,8 @@ const LoginV2 = () => {
                 >
 
                     <div
-                        className="flex flex-col items-center justify-center space-y-8 p-6 md:p-4 bg-indigo-800 rounded-3xl "
-                        data-atropos-opacity="1;0.8"
+                        className="flex flex-col items-center justify-center space-y-8 p-6 md:p-4 bg-indigo-800 opacity-75 rounded-3xl "
+                        data-atropos-opacity="1;0.9"
                         data-atropos-offset="-8"
                     >
                         <div className="p-4" >
