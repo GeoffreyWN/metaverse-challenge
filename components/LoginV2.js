@@ -42,7 +42,7 @@ const LoginV2 = () => {
                     >
                         <div className="p-4" >
                             <Image
-                                src="https://cdn.pixabay.com/photo/2017/07/08/10/16/explosion-2483998_960_720.jpg "
+                                src="/explosion.jpg"
                                 width={200}
                                 height={200}
                                 className="object-cover p-2 shadow-sm shadow-red-400 rounded-full"
