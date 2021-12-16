@@ -53,7 +53,7 @@ const LoginV2 = () => {
 
                         <button
                             data-atropos-offset="5"
-                            className="bg-gray-900 text-white rounded-lg p-5 font-bold font-mulish animate-bounce shadow-lg shadow-red-400 "
+                            className="bg-gray-900 text-white rounded-lg p-5 font-bold animate-bounce shadow-lg shadow-red-400 "
                             onClick={authenticate}>Login into the Metaverse</button>
                     </div>
                 </Atropos>
