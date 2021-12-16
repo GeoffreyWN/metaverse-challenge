@@ -14,7 +14,7 @@ export default function Home() {
     <div className="h-screen">
       <Head>
         <title>Metaverse Challenge</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/m.png" />
       </Head>
       <h1>Welcome to the app</h1>
       <button onClick={logout}> Logout </button>

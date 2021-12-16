@@ -2,6 +2,7 @@ import { useMoralis } from "react-moralis";
 import Image from 'next/image'
 import Atropos from 'atropos/react';
 import Typewriter from 'typewriter-effect';
+import { LoginIcon } from '@heroicons/react/outline'
 
 
 const LoginV2 = () => {
@@ -10,7 +11,7 @@ const LoginV2 = () => {
         <div className="bg-black relative" >
 
             <div className="flex flex-col absolute z-50 h-4/6 w-full items-center justify-center  " >
-                <div className="mt-28 text-2xl md:text-6xl font-bold text-gray-300">
+                <div className="mt-28 text-2xl md:text-6xl font-bold font-specialelite text-gray-300">
 
                     <Typewriter
 
@@ -45,7 +46,7 @@ const LoginV2 = () => {
                                 src="/explosion.jpg"
                                 width={200}
                                 height={200}
-                                className="object-cover p-2 shadow-sm shadow-red-400 rounded-full"
+                                className="object-cover p-2 mb-2 shadow-sm shadow-red-400 rounded-full"
                                 data-atropos-offset="-5"
                             />
                         </div>
@@ -53,8 +54,8 @@ const LoginV2 = () => {
 
                         <button
                             data-atropos-offset="5"
-                            className="bg-gray-900 text-white rounded-lg p-5 font-bold animate-bounce shadow-lg shadow-red-400 "
-                            onClick={authenticate}>Login into the Metaverse</button>
+                            className="group flex flex-row items-center bg-gray-900 text-white rounded-2xl p-5 font-bold font-mulish animate-bounce shadow-lg shadow-red-400 transform-gpu transition delay-150 duration-300 ease-in-out hover:bg-red-400 hover:text-gray-900 hover:shadow-gray-900"
+                            onClick={authenticate}> <LoginIcon className="h-5 text-red-400 pr-2 group-hover:text-gray-900" />Login into the Metaverse</button>
                     </div>
                 </Atropos>
             </div>
