@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import 'atropos/css'
 import { MoralisProvider } from "react-moralis";
 
 

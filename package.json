@@ -7,11 +7,13 @@
   },
   "dependencies": {
     "@walletconnect/web3-provider": "^1.7.0",
+    "atropos": "^1.0.1",
     "moralis": "0.0.165",
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-moralis": "^0.3.1"
+    "react-moralis": "^0.3.1",
+    "typewriter-effect": "^2.18.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",

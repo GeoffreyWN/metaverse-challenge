@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 
 const Login = () => {
-const { authenticate } = useMoralis();
+    const { authenticate } = useMoralis();
     return (
         <div className="bg-black relative" >
             <div className="flex flex-col absolute z-50 h-4/6 w-full items-center justify-center space-y-4 " >
