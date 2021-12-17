@@ -20,7 +20,7 @@
     -moz-animation: fadeIn 1 1s ease-out;
     -o-animation: fadeIn 1 1s ease-out;
     animation: fadeIn 1 1s ease-out;
-    cursor: url('/hammer.ico '), default;
+    /* cursor: url('/hammer.ico '), default; */
   }
 
   .light {
