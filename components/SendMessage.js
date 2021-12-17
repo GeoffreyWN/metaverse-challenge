@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useMoralis } from "react-moralis";
+import { PaperAirplaneIcon } from '@heroicons/react/outline'
 
 
 const SendMessage = ({ endOfMessagesRef }) => {
@@ -36,13 +37,13 @@ const SendMessage = ({ endOfMessagesRef }) => {
     }
 
     return (
-        <form className="flex fixed bottom-10 bg-blavk opacity-80 w-11/12 px-6 py-4 max-w-2xl shadow-xl rounded-full border-4 border-blue-400 " >
+        <form className="flex fixed bottom-10 bg-stone-800 opacity-80 w-11/12 px-6 py-4 max-w-2xl shadow-lg rounded-full border-4 border-lime-400 shadow-pink-300 " >
 
-            <input type="text" value={message} onChange={e => setMessage(e.target.value)} className=" flex-grow outline-none bg-transparent text-white placeholder-gray-500 pr-5 "
+            <input type="text" value={message} onChange={e => setMessage(e.target.value)} className=" flex-grow outline-none bg-transparent text-white text-lg font-semi-bold placeholder-gray-500 pr-5 "
                 placeholder={`Enter a message ${user.getUsername()}`}
             />
 
-            <button type="submit" onClick={sendMessage} className="font-bold text-pink-500">Send</button>
+            <button type="submit" onClick={sendMessage} className=" flex items-center font-bold text-pink-500"> <PaperAirplaneIcon className=" rotate-90 h-5 text-red-400 pr-2 hover:animate-pulse" /> </button>
         </form>
     )
 }

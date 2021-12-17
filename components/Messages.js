@@ -21,11 +21,11 @@ const Messages = () => {
 
     return (
         <div className="pb-56">
-            <div className="my-5" >
+            <div className="block lg:hidden justify-center mx-auto  my-5" >
                 <ByMoralis style={{ marginLeft: 'auto', marginRight: 'auto' }} variant='dark' />
             </div>
 
-            <div className="space-y-10 p-4" >
+            <div className="my-5 space-y-10 p-4" >
                 {/* each message */}
                 {data.map(message => (
                     <Message key={message.id} message={message} />
@@ -37,7 +37,7 @@ const Messages = () => {
             </div>
 
             <div ref={endOfMessagesRef} className="text-center text-gray-400 mt-5" >
-                <p>You're up to date {user.getUsername()} </p>
+                <p>You're up to date {user.getUsername()} ! 🎉 </p>
             </div>
 
         </div>

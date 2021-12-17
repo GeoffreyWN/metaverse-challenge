@@ -1,5 +1,6 @@
 import { useMoralis } from "react-moralis";
 import TimeAgo from 'timeago-react';
+import { CheckIcon } from '@heroicons/react/solid'
 import Avatar from "./Avatar";
 
 
@@ -11,15 +12,15 @@ const Message = ({ message }) => {
     return (
         <div className={`flex items-end space-x-2 relative ${isUserMessage && 'justify-end'}`} >
 
-            <div className={`relative h-8 w-8 ${isUserMessage && 'order-last ml-2'}`} >
+            <div className={`relative h-8 w-8 rounded-full shadow-sm shadow-lime-300 border border-lime-300  ${isUserMessage && 'order-last ml-2'}`} >
                 <Avatar />
             </div>
 
-            <div className={`flex space-x-4 p-3 rounded-lg ${isUserMessage ?
-                'rounded-br-none bg-pink-300'
+            <div className={`flex space-x-4 py-3 px-6 rounded-lg ${isUserMessage ?
+                'rounded-br-none bg-pink-200'
                 :
                 'rounded-bl-none bg-blue-400'}`} >
-                <p>{message.get('message')}</p>
+                <p className=" flex items-center text-gray-700 font-medium" >{message.get('message')} <CheckIcon className="h-4 ml-2 text-blue-300 font-bold " />  </p>
             </div>
 
             <TimeAgo
