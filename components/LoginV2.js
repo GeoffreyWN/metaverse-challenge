@@ -10,7 +10,7 @@ const LoginV2 = () => {
     return (
         <div className="bg-black relative" >
 
-            <div className="flex flex-col absolute z-50 h-4/6 w-full items-center justify-center opacity-90	 " >
+            <div className="flex flex-col absolute z-50 h-4/6 w-full items-center justify-center opacity-95	 " >
                 <div className="mt-28 text-2xl md:text-6xl font-bold font-specialelite text-gray-300">
 
                     <Typewriter
