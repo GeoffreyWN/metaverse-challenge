@@ -10,17 +10,17 @@ const Message = ({ message }) => {
 
 
     return (
-        <div className={`flex items-end space-x-2 relative ${isUserMessage && 'justify-end'}`} >
+        <div className={`flex items-end space-x-2 relative font-mulish ${isUserMessage && 'justify-end'}`} >
 
             <div className={`relative h-8 w-8 rounded-full shadow-sm shadow-lime-300 border border-lime-300  ${isUserMessage && 'order-last ml-2'}`} >
                 <Avatar />
             </div>
 
             <div className={`flex space-x-4 py-3 px-6 rounded-lg ${isUserMessage ?
-                'rounded-br-none bg-pink-200'
+                'rounded-br-none bg-pink-200 border-l border-b border-cyan-300 shadow-sm shadow-cyan-300 '
                 :
-                'rounded-bl-none bg-blue-400'}`} >
-                <p className=" flex items-center text-gray-700 font-medium" >{message.get('message')} <CheckIcon className="h-4 ml-2 text-blue-300 font-bold " />  </p>
+                'rounded-bl-none bg-blue-300 border-r border-b border-amber-300 shadow-sm shadow-amber-300'}`} >
+                <p className=" flex items-center text-gray-800 font-medium" >{message.get('message')} <CheckIcon className="h-4 ml-2 text-blue-300 font-bold " />  </p>
             </div>
 
             <TimeAgo
